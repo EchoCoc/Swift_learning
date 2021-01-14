@@ -11,6 +11,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let view: UIView = UIView.init();
+        view.backgroundColor = .yellow;
+        self.view.addSubview(view);
         // Do any additional setup after loading the view.
     }
 
