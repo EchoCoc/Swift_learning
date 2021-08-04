@@ -13,10 +13,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let view: UIView = UIView.init();
         view.backgroundColor = .yellow;
+        view.frame = CGRect.init(origin: CGPoint.init(x: 0, y: 0), size: CGSize.init(width: 100, height: 100));
         self.view.addSubview(view);
-        // Do any additional setup after loading the view.
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated);
+        print("kkk");
+        self.doSomethingFunc();
+    }
+    
+    func doSomethingFunc() {
+        
+        print("调用了此函数");
+        
+    }
 
 }
 
